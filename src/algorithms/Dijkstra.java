@@ -13,14 +13,13 @@ public class Dijkstra {
     //Function to find the shortest distance of all the vertices
     //from the source vertex s.
     static int[] dijkstra(int v, ArrayList<ArrayList<ArrayList<Integer>>> adj, int sourceVertex) {
-        // Create a priority queue for storing the nodes as a pair {dist, node
+        // Create a priority queue for storing the nodes as a pair {dist, node}
         // where dist is the distance from source to the node.
         PriorityQueue<Pair> pq = new PriorityQueue<>((x, y) -> x.distance - y.distance);
 
         int[] dist = new int[v];
 
-        // Initialising distTo list with a large number to
-        // indicate the nodes are unvisited initially.
+        // Initialising dist list with a large number to indicate the nodes are unvisited initially.
         // This list contains distance from source to the nodes.
         Arrays.fill(dist, Integer.MAX_VALUE);
 

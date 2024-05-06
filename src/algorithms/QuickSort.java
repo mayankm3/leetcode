@@ -1,15 +1,15 @@
 package algorithms;
 
 public class QuickSort {
+
+    // https://www.youtube.com/watch?v=COk73cpQbFQ
     public static void main(String[] args) {
-        int[] arr = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
+        int[] arr = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 1000};
 
         quickSort(arr, 0, arr.length - 1);
 
         System.out.print("Sorted Array: ");
-        for (int element : arr) {
-            System.out.print(element + " ");
-        }
+        for (int element : arr) {System.out.print(element + " ");}
     }
 
     public static void quickSort(int[] arr, int low, int high) {
@@ -23,17 +23,17 @@ public class QuickSort {
 
     public static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
-        int i = low - 1;
+        int partitionIndex = low;
 
-        for (int j = low; j < high; j++) {
-            if (arr[j] <= pivot) {
-                i++;
-                swap(arr, i, j);
+        for (int i = low; i < high; i++) {
+            if (arr[i] <= pivot) {
+                swap(arr, partitionIndex, i);
+                partitionIndex++;
             }
         }
 
-        swap(arr, i + 1, high);
-        return i + 1;
+        swap(arr, partitionIndex, high);
+        return partitionIndex;
     }
 
     public static void swap(int[] arr, int i, int j) {
