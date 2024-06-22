@@ -1,4 +1,4 @@
-package solutions.medium.again;
+package solutions.easy.again;
 
 public class IntersectionofTwoLinkedLists {
 

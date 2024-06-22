@@ -35,7 +35,7 @@ public class PopulatingNextRightPointersinEachNode2 {
 
         for (; root!=null ; root=root.left) {   // The 3rd condition in for loops is evaluated after current iteration ends :)
 
-            for (Node curr = root; curr!=null ; curr=curr.next) {   // // The 3rd condition in for loops is evaluated after current iteration ends :)
+            for (Node curr = root; curr!=null; curr=curr.next) {   // // The 3rd condition in for loops is evaluated after current iteration ends :)
                 if (curr.left!=null){
                     curr.left.next = curr.right;
                     if (curr.next!=null) curr.right.next = curr.next.left;

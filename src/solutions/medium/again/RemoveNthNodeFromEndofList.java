@@ -5,6 +5,7 @@ public class RemoveNthNodeFromEndofList {
     // https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
     // Time complexity:O(N)
     // Space complexity:O(1)
+    // slow will stop at (n+1)th node from end
     private static class ListNode {
         int val;
         ListNode next;

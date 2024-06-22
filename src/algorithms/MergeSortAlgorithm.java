@@ -1,4 +1,4 @@
-package solutions.easy;
+package algorithms;
 
 import java.util.Random;
 

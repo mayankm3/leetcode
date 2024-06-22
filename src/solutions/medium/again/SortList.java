@@ -18,6 +18,7 @@ public class SortList {
     public ListNode sortList(ListNode head) {
         if (head==null || head.next==null) return head;
 
+        // Step 1: cut the list to two halves
         ListNode prev = null, slow=head, fast=head;
 
         while (fast!=null && fast.next!=null){
@@ -28,14 +29,17 @@ public class SortList {
 
         prev.next = null;
 
+        // Step 2: sort each half
         ListNode l1 = sortList(head);
         ListNode l2 = sortList(slow);
 
+        // Step 3: merge l1 and l2
         return merge(l1, l2);
     }
 
     private ListNode merge(ListNode l1, ListNode l2) {
-        ListNode dummyHead = new ListNode(0), currentNode = dummyHead;
+        ListNode dummyHead = new ListNode(0);
+        ListNode currentNode = dummyHead;
 
         while (l1!=null && l2!=null){
             if (l1.val<=l2.val){
