@@ -3,7 +3,9 @@ package solutions.easy;
 public class SymmetricTree {
 
     // https://leetcode.com/problems/symmetric-tree/
-    //
+    // TC: O(n) We need to visit each node once to check if the tree is symmetric
+    // SC: O(h) where h is the height of the binary tree. In the worst case, the tree can be completely unbalanced, and
+    // the recursion stack can go as deep as the height of the tree.
     private class TreeNode {
         int val;
         TreeNode left;
@@ -25,8 +27,7 @@ public class SymmetricTree {
     private boolean helper(TreeNode tLeft, TreeNode tRight){
         if(tLeft==null && tRight==null) return true;
         if(tLeft==null || tRight==null) return false;
-        if(tLeft.val!=tRight.val)
-            return false;
+        if(tLeft.val != tRight.val) return false;
         return helper(tLeft.left, tRight.right) && helper(tLeft.right, tRight.left);
     }
 

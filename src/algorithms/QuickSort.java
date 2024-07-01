@@ -3,8 +3,9 @@ package algorithms;
 public class QuickSort {
 
     // https://www.youtube.com/watch?v=COk73cpQbFQ
+    // https://www.youtube.com/watch?v=3Bbm3Prd5Fo
     public static void main(String[] args) {
-        int[] arr = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 1000};
+        int[] arr = {-1000, 3, 1, 4, 1, 5, 9, 0, 2, 6, 5, 3, 5, 1000, -1, -1, 0};
 
         quickSort(arr, 0, arr.length - 1);
 
@@ -21,12 +22,12 @@ public class QuickSort {
         }
     }
 
-    public static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high];
+    private static int partition(int[] arr, int low, int high) {
+        int pivotElement = arr[high];
         int partitionIndex = low;
 
         for (int i = low; i < high; i++) {
-            if (arr[i] <= pivot) {
+            if (arr[i] < pivotElement) {
                 swap(arr, partitionIndex, i);
                 partitionIndex++;
             }
@@ -36,7 +37,7 @@ public class QuickSort {
         return partitionIndex;
     }
 
-    public static void swap(int[] arr, int i, int j) {
+    private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;

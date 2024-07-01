@@ -2,7 +2,6 @@ package algorithms;
 
 public class MergeSort {
 
-    // https://youtu.be/9diDWV-fOnE?t=15071
     /**
      * Rearranges the array in ascending order, using the natural order.
      * @param a the array to be sorted

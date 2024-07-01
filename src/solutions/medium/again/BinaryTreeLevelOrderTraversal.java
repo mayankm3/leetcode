@@ -39,10 +39,10 @@ public class BinaryTreeLevelOrderTraversal {
         // that the size is one, which means we added only 1 node to the queue and not the whole tree.
 
         while (!treeNodeQueue.isEmpty()){
-            int cnt = treeNodeQueue.size();
-            List<Integer> level = new ArrayList<>(cnt);
+            int count = treeNodeQueue.size();
+            List<Integer> level = new ArrayList<>(count);
 
-            for (int i = 0; i < cnt; i++) {
+            for (int i = 0; i < count; i++) {
                 TreeNode aNode = treeNodeQueue.poll();  // Retrieves and removes
                 level.add(aNode.val);
                 if(aNode.left != null){
