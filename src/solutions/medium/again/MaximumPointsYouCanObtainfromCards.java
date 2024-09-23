@@ -3,7 +3,7 @@ package solutions.medium.again;
 public class MaximumPointsYouCanObtainfromCards {
 
     // https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/solutions/597825/simple-clean-intuitive-explanation-with-visualization/
-    // https://www.youtube.com/watch?v=pBWCOCS636U&list=PLgUwDviBIf0q7vrFA_HEWcqRqMpCXzYAL&index=3
+    // https://www.youtube.com/watch?v=pBWCOCS636U
     public int maxScore(int[] cardPoints, int k) {
         int lSum = 0, rSum = 0;
         int maxPoints = 0;

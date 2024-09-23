@@ -1,6 +1,9 @@
 package solutions.medium.again;
 
 public class SearchInARotatedSortedArray {
+
+    // https://leetcode.com/problems/search-in-rotated-sorted-array
+    // https://leetcode.com/problems/search-in-rotated-sorted-array/solutions/14436/revised-binary-search/
     public static void main(String[] args) {
         int[] arr1 = {4,5,6,7,0,1,2};
         System.out.println(search(arr1, 0));
@@ -18,7 +21,8 @@ public class SearchInARotatedSortedArray {
 
             if(nums[mid] == target) return mid;
 
-            if(nums[low]<=nums[mid]){   // Why = in if? See acamillo's reply to tld's reply
+            if(nums[low]<=nums[mid]){   // https://youtu.be/5qGrJbHhqFs?t=749 identifying sorted half
+                                        // Why = in if? See acamillo's reply to tld's reply
                 if (target>=nums[low] && target<nums[mid]){
                     high = mid - 1;
                 }
