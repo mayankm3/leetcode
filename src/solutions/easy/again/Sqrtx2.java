@@ -21,7 +21,7 @@ public class Sqrtx2 {
             int mid = left + (right - left) / 2;
 
             if (mid == x/mid) return mid;   // taking care of integer overflow
-            else if (mid > x/mid) {
+            else if (mid > x/mid) { // or if(mid*mid>x)
                 right = mid-1;
             }
             else if(mid < x/mid) {
