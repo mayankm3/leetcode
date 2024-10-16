@@ -1,10 +1,9 @@
 package solutions.medium.again;
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-public class LongestConsecutiveSequence3 {
+public class LongestConsecutiveSequence {
 
     // https://leetcode.com/problems/longest-consecutive-sequence/description/
     // https://www.youtube.com/watch?v=oO5uLE7EUlM&t=776s

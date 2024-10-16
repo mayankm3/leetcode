@@ -1,6 +1,6 @@
 package solutions.medium.again;
 
-public class SingleElementinaSortedArray1 {
+public class SingleElementinaSortedArray {
 
     // https://leetcode.com/problems/single-element-in-a-sorted-array/description/
     // https://leetcode.com/problems/single-element-in-a-sorted-array/solutions/100754/java-binary-search-short-7l-o-log-n-w-explanations/comments/235525

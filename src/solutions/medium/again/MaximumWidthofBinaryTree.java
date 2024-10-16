@@ -3,7 +3,7 @@ package solutions.medium.again;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class MaximumWidthofBinaryTree2 {
+public class MaximumWidthofBinaryTree {
 
     // https://leetcode.com/problems/maximum-width-of-binary-tree/
     // https://leetcode.com/problems/maximum-width-of-binary-tree/solutions/3436680/java-easy-image-explaination-level-order-beginner-friendly/

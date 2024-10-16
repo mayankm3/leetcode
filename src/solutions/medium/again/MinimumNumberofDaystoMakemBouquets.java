@@ -30,7 +30,7 @@ public class MinimumNumberofDaystoMakemBouquets {
             }
         }
 
-        return low;
+        return low; // the lowest number of days
     }
 
     private int bloomed(int[] bloomDay, int k, int mid) {

@@ -1,6 +1,6 @@
 package solutions.medium.again;
 
-public class KthSmallestElementinaBST1 {
+public class KthSmallestElementinaBST {
 
     // https://leetcode.com/problems/kth-smallest-element-in-a-bst
     private class TreeNode {

@@ -2,7 +2,7 @@ package solutions.medium.again;
 
 import java.util.Arrays;
 
-public class ProductofArrayExceptSelf2 {
+public class ProductofArrayExceptSelf {
 
     // https://leetcode.com/problems/product-of-array-except-self/solutions/65622/simple-java-solution-in-o-n-without-extra-space/
     public static void main(String[] args) {

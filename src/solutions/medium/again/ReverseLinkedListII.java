@@ -1,6 +1,6 @@
 package solutions.medium.again;
 
-public class ReverseLinkedListII1 {
+public class ReverseLinkedListII {
 
     // https://leetcode.com/problems/reverse-linked-list-ii/solutions/2311084/java-c-tried-to-explain-every-step/
     // https://www.youtube.com/watch?v=oDL8vuu2Q0E
