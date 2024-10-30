@@ -2,6 +2,8 @@ package algorithms;
 
 public class MergeSort {
 
+    // Based on Robert Sedgewick's lecture
+    // https://www.youtube.com/watch?v=6IyUCf8Yhdw&list=PLie9xX4xnpe0_4NtyxpzGc__W-b049CyH&index=27
     /**
      * Rearranges the array in ascending order, using the natural order.
      * @param a the array to be sorted

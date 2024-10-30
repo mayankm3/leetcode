@@ -1,10 +1,10 @@
-package solutions.medium.again;
+package solutions.medium;
 
 import java.util.Arrays;
 
 public class MagneticForceBetweenTwoBalls {
 
-    // https://www.youtube.com/watch?v=R_Mfw4ew-Vo  // similar problem in leetcode
+    // https://www.youtube.com/watch?v=R_Mfw4ew-Vo similar problem in leetcode
     // https://leetcode.com/problems/magnetic-force-between-two-balls/
     // TC: O(NlogN) + N*O(log(high))
     // SC: O(1)
@@ -23,7 +23,7 @@ public class MagneticForceBetweenTwoBalls {
             }
         }
 
-        return high;
+        return high;    // why return high? see after 20:00
     }
 
     private boolean canWePlaceAll(int[] positions, int balls, int minForce){

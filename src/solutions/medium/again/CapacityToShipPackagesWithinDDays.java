@@ -28,7 +28,7 @@ public class CapacityToShipPackagesWithinDDays {
     }
 
     private boolean canWeShip(int[] weights, int days, int capacity){
-        int daysTaken = 1, sumOfWeights = 0;    // taken as 1, try with a TC
+        int daysTaken = 1, sumOfWeights = 0;    // taken as 1, try with a TC. It will take at least a day
 
         for (int weight:weights){
             if (weight>capacity || daysTaken>days) return false;

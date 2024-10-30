@@ -9,7 +9,7 @@ public class KthMissingPositiveNumber {
         while (left<=right){
             int mid = (left+right)/2;
 
-            int missingNums = arr[mid] - (mid+1);   // thanks to GPT
+            int missingNums = arr[mid] - (mid+1);   // thanks to GPT for explanation
 
             if (missingNums < k){
                 left = mid+1;
