@@ -2,6 +2,8 @@ package solutions.hard.again;
 
 public class MedianOfTwoSortedArrays {
 
+    // https://www.youtube.com/watch?v=F9c7LpRZWVQ&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=23
+    // The visual representations were very helpful
     public double findMedianSortedArrays(int[] nums1, int[] nums2){
         int n1 = nums1.length, n2 = nums2.length;
         if (n1 > n2) return findMedianSortedArrays(nums2, nums1);

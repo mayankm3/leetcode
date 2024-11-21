@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CombinationSumI1 {
 
-    // Line 27 to 34 is what I could think of based off striver's video
+    // only line 27 to 34 is what I could think of based off striver's video
     // https://leetcode.com/problems/combination-sum/description/
     // https://www.youtube.com/watch?v=OyZFFqQtu98
     // TC: (2^t)*k
