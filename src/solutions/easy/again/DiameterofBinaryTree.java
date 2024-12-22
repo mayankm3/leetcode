@@ -10,13 +10,14 @@ public class DiameterofBinaryTree {
     // Space Complexity: O(1) Extra Space + O(H) Recursion Stack space (Where “H”  is the height of binary tree). O(n)
     // if tree is skewed.
     int currLongestDiameter;
+
     private class TreeNode {
         int val;
-        DiameterofBinaryTree.TreeNode left;
-        DiameterofBinaryTree.TreeNode right;
+        TreeNode left;
+        TreeNode right;
         TreeNode() {}
         TreeNode(int val) { this.val = val; }
-        TreeNode(int val, DiameterofBinaryTree.TreeNode left, DiameterofBinaryTree.TreeNode right) {
+        TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
             this.right = right;

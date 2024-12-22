@@ -2,6 +2,7 @@ package solutions.easy.again;
 
 public class IntersectionofTwoLinkedLists {
 
+    // https://leetcode.com/problems/intersection-of-two-linked-lists/description/
     // https://leetcode.com/problems/intersection-of-two-linked-lists/solutions/49785/java-solution-without-knowing-the-difference-in-len/
     // https://www.youtube.com/watch?v=u4FWXfgS8jw&t=725s
     // TC:O(M+N) or O(max(M,N))
