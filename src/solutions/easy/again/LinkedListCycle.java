@@ -24,7 +24,7 @@ public class LinkedListCycle {
             slow = slow.next;
             fast = fast.next.next;
 
-            if (slow==fast) return true;
+            if (slow==fast) return true;    // they have met not necessarily at where cycle starts
         }
 
         return false;

@@ -30,11 +30,11 @@ public class SortList {
         prev.next = null;
 
         // Step 2: sort each half
-        ListNode l1 = sortList(head);
-        ListNode l2 = sortList(slow);
+        ListNode leftSide = sortList(head);
+        ListNode rightSide = sortList(slow);
 
         // Step 3: merge l1 and l2
-        return merge(l1, l2);
+        return merge(leftSide, rightSide);
     }
 
     private ListNode merge(ListNode l1, ListNode l2) {
@@ -44,7 +44,7 @@ public class SortList {
         while (l1!=null && l2!=null){
             if (l1.val<=l2.val){
                 currentNode.next = l1;
-                l1 = l1.next;
+                l1 = l1.next;   // processed, now move to next element
             }
             else {
                 currentNode.next = l2;
